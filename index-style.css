@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'MapoDacapo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDacapoA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(main-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* main page 제외 내비게이션 바 */
+#sub-nav {
+    background-image: url(nav-bg.jpg);
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#sub-title {
+    color: #f0f0f0;
+    font-family: 'MapoDacapo', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    font-style: normal;
+}
+#sub-list {
+    color: #f0f0f0;
+}
+
+#title {
+    font-family: 'MapoDacapo', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    font-style: normal;
+}
+
+/* first.html 조작 */
+h4 {
+    padding-left: 60px;
+    padding-bottom: -5px;
+    margin-bottom: -40px;
+}
+#write {
+    background-color: #5a624a;
+    border: 0;
+    text-align: center;
+
+    box-sizing: border-box;
+    margin-right: 60px;
+    padding-top: -60px;
+    margin-top: -40px;
+}
+#write:hover {
+    background-color: #84886d;
+}
+#bottom-hr {
+    margin-bottom:-10px;
+}
+
+#first-table {
+    padding: 70px;
+}
+#board {
+    text-decoration: none !important;
+    color: #080806;
+}
+#board:hover {
+    color: #5a624a;
+    font-weight: bold;
+}
+
+.page-link {
+    position: relative;
+    display: inline-block;
+    color: #5a624a;
+    background-color: rgba(240, 240, 240, 0);
+
+    border: 0px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px 16px 10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.page-link:hover {
+  z-index: 2;
+  border-radius: 24px;
+  color: #f0f0f0;
+  text-decoration: none;
+  background-color: #5a624a;
+  border-color: none;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #5a624a;
+}
+/* first.html 조작 끝 */
+
+/* 작성된 글 페이지 조작 */
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 50px;
+}
+#write-header {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+#write-hr {
+    width: 87%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+#pre {
+    font-family: 'Pretendard-Regular', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+pre {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+#cmt-all {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+}
+#ttabong {
+    border: 0;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: #84886d;
+}
+#ttabong:hover {
+    color: #5a624a;
+    background-color: #bbb9ac;
+}
+
+#comment {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+#cmt-header {
+    font-weight: bold;
+    font-size: large;
+}
+#cmt-button {
+    background-color: #5a624a;
+    border: 0;
+}
+#cmt-button:hover {
+    background-color: #84886d;
+}
+
+#cmt-none {
+    text-align: center;
+    color: rgb(200, 200, 200)
+}
+/* 작성된 글 페이지 조작 끝 */
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
