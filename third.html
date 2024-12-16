@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head lan="ko">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale-1">
+
+        <title>감각: 추천감</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="index-style.css">
+
+        <script>
+            const currentPath = window.location.pathname; // 현재 경로 가져오기
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add('active'); // 현재 페이지와 일치하는 링크에 active 추가
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+          </script>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- 내비게이션 바 시작 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline" id="sub-nav">
+            <div class="container-fluid row">
+                <div class="col-9">
+                    <a class="navbar-brand" id="sub-title" href="index.html">감각</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" id="sub-list" aria-current="page" href="first.html">독후감</a>
+                        <a class="nav-link" id="sub-list" href="second.html">토의감</a>
+                        <a class="nav-link active" id="sub-list" href="#">추천감</a>
+                        <a class="nav-link" id="sub-list" href="forth.html">소개감</a>
+                        <a class="nav-link" id="sub-list" href="fifth.html">가입</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 내비게이션 바 끝 -->
+
+        <br><br><br><br><br>
+        <h1 id="thd-h1">이달의 추천</h1>
+        <br><br><br>
+
+        <!-- 미니 네비게이션 시작 -->
+        <ul class="nav nav-pills nav-fill nav-justify justify-content-center" id="mini-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#thd-h3-1" id="mini-list">소설</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#thd-h3-2" id="mini-list">사회</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#thd-h3-3" id="mini-list">기술</a>
+            </li>
+        </ul>
+        <br><br><hr id="thd-hr">
+        <!-- 미니 네비게이션 끝 -->
+
+        <!-- 소설 단락 시작 -->
+        <br><br>
+        <h3 id="thd-h3-1">이달의 소설</h3>
+
+        <div class="row" id="card-all">
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card1.jpg" class="card-img-top"alt="⌈소년이 온다⌋ 창비 출판사 표지">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈소년이 온다⌋</h5>
+<pre class="card-text">   
+ "어떤 기억은 아물지 않습니다.
+시간이 흘러 기억이 흐릿해지는 게 아니라,
+오히려 그 기억만 남기고 다른 모든 것이
+서서히 마모됩니다.
+
+색 전구가 하나씩 나가듯
+세계가 어두워집니다."
+</pre>
+                      <a href="https://www.changbi.com/BookDetail?bookid=2482" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card2.jpg" class="card-img-top" alt="⌈작별하지 않는다⌋ 문학동네 출판사 표지"
+                    style="max-width: 350;">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈작별하지 않는다⌋</h5>
+<pre class="card-text">   
+ "무엇을 생각하면 견딜 수 있나.
+가슴에 활활 일어나는 불이 없다면.
+기어이 돌아가 껴안을 네가 없다면."
+</pre>                      
+                      <a href="https://munhak.com/bookAndAuthor/books/detail/7572" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card3.jpg" class="card-img-top" alt="⌈채식주의자⌋ 창비 출판사 개정판 표지"
+                    style="max-width: 350;">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈채식주의자⌋</h5>
+<pre class="card-text">   
+ "⋯⋯이건 말이야.
+⋯⋯어쩌면 꿈인지 몰라.
+꿈속에선, 꿈이 전부인 것 같잖아.
+하지만 깨고 나면 그게 전부가 아니란 걸
+알지⋯⋯ 그러니까, 언젠가 우리가 깨어나면,
+그때는⋯⋯"
+</pre>                      
+                      <a href="https://www.changbi.com/BookDetail?bookid=3777" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- 소설 단락 끝 -->
+        <br><br><hr role="tournament1"><br>
+
+        <!-- 사회 단락 시작 -->
+        <h3 id="thd-h3-2">이달의 사회</h3>
+
+        <div class="row" id="card-all">
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card4.jpg" class="card-img-top"alt="⌈어떻게 민주주의는 무너지는가⌋ 어크로스 출판사 표지">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈어떻게 민주주의는 무너지는가⌋</h5>
+<pre class="card-text">   
+ 민주주의의 위기를 알리는 구체적인 신호들
+
+ - 기성 정당과 정치인들이
+  포퓰리스트와 손잡는다.
+ - 정치인들이 경쟁자에게
+  반국가 세력이라는 낙인을
+  찍는다.
+ - 선거에서 패배한 정당이
+  음모론을 제기하며 결과에
+  불복한다.
+ - 대통령이 의회를 우회해
+  행정명령을 남발한다.
+  ⋯
+</pre>
+                      <a href="https://www.acrossbook.com/book/view.php?isbn=9791160560589" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card5.jpg" class="card-img-top" alt="⌈그의 운명에 대한 아주 개인적인 생각⌋ 생각의길 출판사 표지"
+                    style="max-width: 350;">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈그의 운명에 대한 아주 개인적인 생각⌋</h5>
+<pre class="card-text">   
+ "민주주의가 배격하는 것은
+극단적 이념이 아니라 다른 이념을
+폭력으로 공격하고 말살하려는 독선과
+불관용이다.
+
+ 다수파든 소수파든 상관없다.
+자신이 옳다고 여기는 이념을 폭력으로
+타인에게 강요하는 행위는 용납하지
+말아야 한다."
+</pre>                      
+                      <a href="https://product.kyobobook.co.kr/detail/S000213543997" class="btn btn-primary" id="card-btn"
+                      target="_blank">서점 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card6.jpg" class="card-img-top" alt="⌈언더그라운드 엠파이어⌋ PADO북스 출판사 표지"
+                    style="max-width: 350;">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈언더그라운드 엠파이어⌋</h5>
+<pre class="card-text">   
+ '글로벌'이 중립을 의미하던 시대는 끝났다.
+미국과 중국의 '보이지 않는' 언더그라운드
+패권 전쟁
+
+ 미국은 왜 중국산 앱 틱톡(TikTok)을
+금지하려 하는가? 일본은 왜 한국 네이버의
+라인(LINE) 지분에 대해 우려하고 있는가?
+왜 삼성은 TSMC만큼 파운드리 사업을 잘
+해내지 못하고 있는가?
+
+ 20여 년 전만 해도 '글로벌', '인터넷'
+등의 단어는 '국가를 초월한', 즉 미국과
+중국 등 강대국도 어쩔 수 없는 '초국적',
+'초국가적'이라는 의미를 가졌다. 하지만
+그것은 허상이었고, 9/11 이후엔 그 허상이
+공개적으로 붕괴하기 시작했다.
+</pre>                      
+                      <a href="https://www.pado.kr/books" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- 사회 단락 끝 -->
+        <br><br><hr role="tournament1"><br>
+
+        <!-- 기술 단락 시작 -->
+        <h3 id="thd-h3-3">이달의 기술</h3>
+
+        <div class="row" id="card-all">
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card7.jpg" class="card-img-top"alt="⌈침묵의 봄⌋ 에코리브르 출판사 개정판 표지">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈침묵의 봄⌋</h5>
+<pre class="card-text">   
+ 많은 사람은 "환경 문제의 위험은
+부풀려진 경향이 있다"거나 "기후 위기에
+대해서는 너무 많이 들어왔다"고 말한다.
+하지만 전 세계가 기상이변으로 몸살을
+앓고 있다. '지구가 따뜻해지는(global
+warming)' 것을 넘어 '끓어오르고
+(global boiling)' 있다.
+
+ 다시 한 번 환경을 생각하지 않을 수 없다.
+</pre>
+                      <a href="https://product.kyobobook.co.kr/detail/S000213057707" class="btn btn-primary" id="card-btn"
+                      target="_blank">서점 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card8.jpg" class="card-img-top" alt="⌈무의식은 어떻게 나를 설계하는가⌋ 알에이치코리아(RHK) 출판사 표지"
+                    style="max-width: 350;">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈무의식은 어떻게 나를 설계하는가⌋</h5>
+<pre class="card-text">   
+ 오늘 했던 행동이 정말 내가 한 게 맞을까?
+어떤 일들은 의식하지 못하는 사이에 일어
+나곤 한다. 도어락 비밀번호를 눌러 문을
+열고, 운전을 해서 출근하는 행위 같은
+일상적인 행동에서부터, 가끔 '이걸 내가?'
+싶은 멋진 글을 써내기도 한다.
+
+ 괴테가 <젊은 베르테르의 슬픔>을 쓸 때
+'손에 쥔 펜이 저절로 움직이는 것 같았다'
+고 했던 것이나 지드래곤이 'This Love'를
+작사하는 데 20분도 채 걸리지 않았다며
+스스로 놀라움을 표현한 일 모두,
+그 중심에는 '무의식'이 있다.
+</pre>                      
+                      <a href="https://www.yes24.com/Product/Goods/138503348" class="btn btn-primary" id="card-btn"
+                      target="_blank">서점 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="max-width: 350px; background-color: rgba(240, 240, 240, 0);">
+                    <img src="thd-card9.jpg" class="card-img-top"alt="⌈박태웅의 AI 강의 2025⌋ 한빛비즈 출판사 표지">
+                    <div class="card-body">
+                      <h5 class="card-title">⌈박태웅의 AI 강의 2025⌋</h5>
+<pre class="card-text">   
+ "이제 우리는 AI를 쓰는 시대를 넘어,
+AI와 함께하는 시대로 가고 있습니다.
+그렇기에 모든 이에게 AI 리터러시가
+매우 절실합니다!"
+
+ 기회를 놓치지 않기 위해
+ 미래를 앞서 나가기 위해
+지금 모두가 찾고 있는 IT 현자의
+AI 명강의
+</pre>
+                      <a href="https://www.hanbit.co.kr/biz/books/book_view.html?p_code=B4108549264" class="btn btn-primary" id="card-btn"
+                      target="_blank">출판사 홈에서 보기</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- 기술 단락 끝 -->
+
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <!-- 풋터 시작 -->
+        <footer id="foot">
+            <div class="container text-center">
+                <pre>
+                <strong>감각</strong>은 책을 사랑하는 사람이라면 누구나 이용 가능합니다.
+                원활한 사이트 운영을 위해 타인을 향한 비방을 금하며, 발각될 경우 법적 조치가 취해질 수 있음을 알립니다.
+                
+                <strong>E-mail: abcdefg@google.com  Call: 010-0000-0000
+                Copyright 2024 Designed by Han Ji Hee</strong></pre>
+            </div>
+        </footer>
+        <!-- 풋터 끝 -->
+    </body>
+</html>

@@ -1,0 +1,801 @@
+/* @font-face {
+    font-family: 'MapoDacapo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDacapoA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+/* 메인페이지 시작 */
+#main-nav {
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #080806;
+    background-color: rgb(240, 240, 240);
+}
+
+#main-h1 {
+    font-family: 'RIDIBatang', sans-serif;
+    font-weight: normal;
+    font-size: 65px;
+}
+#main-first {
+    font-size: 16px;
+    color: #f1f1f1;
+}
+#main-strong {
+    color: #cecece;
+}
+#main-sub {
+    color: #bbb9ac;
+    font-size: 13px;
+}
+#main-h5 {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#fir-news {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+
+    /* color: #080806;
+    text-decoration: #5a624a 10px underline;
+    text-underline-offset: 20px; */
+}
+#news {
+    background-image: url('news.jpg');
+    background-attachment: fixed;
+    max-height: 600px;
+}
+#news-img {
+    background-image: url('news-img-crop-1.png');
+    max-height: 600px;
+}
+#news-h3 {
+    font-family: 'RIDIBatang', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #f0f0f0;
+
+    background-color: #080806;
+    display: block;
+    padding: 5px;
+    margin-right: -12px;
+}
+#news-pre {
+    padding-left: 60px;
+    margin-top: -30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #080806;
+}
+#news-sub {
+    font-size: 13px;
+    color: #272115;
+}
+#news-sub:hover {
+    color: #d7a92a
+}
+
+#fir-dok {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: left;
+    margin-left: 60px;
+}
+#dok-pre {
+    font-weight: bold;
+    font-size: 29px;
+    margin-left: 48px;
+}
+#dok-list {
+    margin-left: 100px;
+}
+#dok-list-2, #dok-list-3 {
+    margin-left: -20px;
+}
+#dok-title {
+    text-decoration: none !important;
+    font-size: 25px;
+}
+.list-group {
+    margin-left: 60px;
+    margin-right: 60px;
+
+    font-size: 20px;
+}
+#dok-btn {
+    background-color: #5a624a;
+    color: #f0f0f0;
+    border: 0;
+}
+#dok-btn:hover {
+    background-color: #84886d;
+}
+#dok-tog {
+    background-color: #84886d;
+    color: #f0f0f0;
+    border: 0;
+
+    margin-left: 60px;
+    font-size: 16px;
+}
+#dok-tog:hover {
+    font-weight: bold;
+}
+#dok-tog-body {
+    margin-left: 70px;
+}
+
+#main-towe {
+    background-image: url(towe-1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+#main-towe-pre {
+    font-family: 'RIDIBatang', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: #f0f0f0;
+
+    text-shadow: 0px 0px 15px #080806;
+}
+#main-towe-sub {
+    margin-left: 160px;
+    margin-top: -75px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 17px;
+    
+    color: #080806;
+}
+#fir-towe {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: right;
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    color: #080806;
+    text-shadow: 0px 0px 20px #f0f0f0;
+}
+
+#main-last {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #080806;
+}
+#main-sns {
+    margin-top: -50px;
+}
+#sns-card {
+    background-color: #fff;
+}
+#sns-card:hover {
+    background-color: rgba(187, 185, 172, 40%);
+}
+#sns-title {
+    font-family: 'RIDIBatang', sans-serif;
+    font-size: 30px;
+}
+#sns-id-1 {
+    font-family: 'RIDIBatang', sans-serif;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+#sns-id-2 {
+    font-family: 'RIDIBatang', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: -30px;
+}
+
+
+/* 메인페이지 끝 */
+
+/* main page 제외 내비게이션 바 */
+#sub-nav {
+    background-image: url(nav-bg.jpg);
+    background-color: (240, 240, 240);
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#sub-title {
+    color: #f0f0f0;
+    font-family: 'RIDIBatang', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    font-style: normal;
+}
+#sub-list {
+    color: #f0f0f0;
+}
+#title {
+    font-family: 'RIDIBatang', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+}
+
+
+/* first.html 조작 */
+#fir-h4 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+
+    padding-left: 60px;
+    padding-bottom: -5px;
+    margin-bottom: -40px;
+}
+#write {
+    background-color: #5a624a;
+    border: 0;
+    text-align: center;
+
+    box-sizing: border-box;
+    margin-right: 60px;
+    padding-top: -60px;
+    margin-top: -40px;
+}
+#write:hover {
+    background-color: #84886d;
+}
+#bottom-hr {
+    margin-bottom:-10px;
+}
+
+#first-table {
+    padding: 70px;
+}
+#board {
+    text-decoration: none !important;
+    color: #080806;
+}
+#board:hover {
+    color: #5a624a;
+    font-weight: bold;
+}
+
+.page-link {
+    position: relative;
+    display: inline-block;
+    color: #5a624a;
+    background-color: rgba(240, 240, 240, 0);
+
+    border: 0px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px 16px 10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.page-link:hover {
+  z-index: 2;
+  border-radius: 24px;
+  color: #f0f0f0;
+  text-decoration: none;
+  background-color: #5a624a;
+  border-color: none;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #5a624a;
+}
+
+#mini-page:active {
+    background-color: #5a624a;
+}
+/* first.html 조작 끝 */
+
+
+/* sub.html 조작 */
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 50px;
+}
+#write-header {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+#write-hr {
+    width: 87%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+#pre {
+    font-family: 'Pretendard-Regular', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+pre {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+#cmt-all {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+}
+#ttabong {
+    border: 0;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: #84886d;
+}
+#ttabong:hover {
+    color: #5a624a;
+    background-color: #bbb9ac;
+}
+
+#comment {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+#cmt-header {
+    font-weight: bold;
+    font-size: large;
+}
+#cmt-button {
+    background-color: #5a624a;
+    border: 0;
+}
+#cmt-button:hover {
+    background-color: #84886d;
+}
+
+#yes-cmt {
+    margin-left: 60px;
+}
+#no-cmt {
+    margin-left: 120px;
+    margin-right: -60px;
+}
+#cmt-button-no {
+    background-color: #5a624a;
+    margin-right: -50px;
+    margin-top: -65px;
+    border: 0;
+}
+#cmt-button-no:hover {
+    background-color: #84886d;
+}
+
+#cmt-none {
+    text-align: center;
+    color: rgb(200, 200, 200)
+}
+/* sub.html 조작 끝 */
+
+
+/* second.html 조작 시작 */
+#sec {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+#sec-book {
+    filter: drop-shadow(10px 10px 10px #080806);
+    width: 400px;
+}
+
+#sec-h1 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    font-style: normal;
+
+    color: #080806;
+    text-decoration: #5a624a 10px underline;
+    text-underline-offset: 20px;
+}
+
+#sec-h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#sec-pre {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+#sec-strong {
+    font-size: 22px;
+    font-weight: bolder;
+}
+#sec-ridi {
+    font-family: 'RIDIBatang', sans-serif;
+}
+
+#sec-right {
+    font-size: 15px;
+    text-align: right;
+    color: #bbb9ac;
+}
+
+/* 토의 단락 */
+#towe {
+    background-color: #bbb9ac;
+}
+
+#sec-h2 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
+    padding-left: 60px;
+
+    margin: 30px;
+    margin-left: 60px;
+    padding: 0.7em;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+}
+#sec-i {
+    color: #851919;
+}
+
+#towe-pre {
+    font-size: 20px;
+}
+
+#sec-pic {
+    width: 380px;
+    margin-right: 60px;
+}
+
+#towe-btn {
+    margin-left: 120px;
+}
+#towe-a-1, #towe-a-2 {
+    text-decoration: none !important;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* 찬성 단락 */
+#yn {
+    background-color: #f0f0f0;
+}
+
+#yes-h1 {
+    margin: 60px;
+    text-align: left;
+
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    font-style: normal;
+
+    color: #080806;
+    text-decoration: #5a624a 10px underline;
+    text-underline-offset: 20px;
+}
+#ridi-yes {
+    font-family: 'RIDIBatang', sans-serif;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: -40px;
+    font-size: 23px;
+}
+
+#yes-id {
+    margin-left: 80px;
+}
+#yes-h5 {
+    text-align: left;
+
+    display: inline-block;
+    position: relative;
+    background-color: #851919;
+    border-radius: 20px;
+    color: #f0f0f0;
+    padding: 7px 12px;
+
+    margin-left: 80px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+#yes-cmt {
+    margin-left: 100px;
+}
+#yes-btn {
+    background-color: #5a624a;
+    color: #f0f0f0;
+    border: 0;
+    
+    margin-left: 25px;
+    margin-right: -40px;
+}
+#yes-btn:hover {
+    background-color: #84886d;
+}
+
+#heart {
+    font-family: 'Dolbomche_R', sans-serif;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    border: 0;
+    border-radius: 10px;
+}
+#heart:hover {
+    background-color: #cecece;
+}
+
+.v-line{
+    border-left: thick solid #cecece;
+    height:100%;
+    left: 50%;
+    margin-top: 60px;
+    position: absolute;
+}
+
+#no-h1 {
+    margin: 60px;
+    text-align: right;
+
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    font-style: normal;
+
+    color: #080806;
+    text-decoration: #5a624a 10px underline;
+    text-underline-offset: 20px;
+}
+#ridi-no {
+    font-family: 'RIDIBatang', sans-serif;
+    text-align: right;
+    margin-right: 60px;
+    margin-top: -40px;
+    font-size: 23px;
+}
+
+#no {
+    margin-left: 30px;
+    text-align: right;
+}
+
+#no-id {
+    margin-right: 80px;
+}
+#no-h5 {
+    text-align: right;
+
+    display: inline-block;
+    position: relative;
+    background-color: #080806;
+    border-radius: 20px;
+    color: #f0f0f0;
+    padding: 7px 12px;
+
+    margin-right: 80px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+#no-cmt {
+    margin-right: 60px;
+}
+/* second.html 조작 끝 */
+
+
+/* third.html 조작 시작 */
+#thd-h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'PuradakGentleGothicR', sans-serif;
+
+    font-size: 80px;
+    font-style: normal;
+
+    color: #080806;
+    text-decoration: #5a624a 10px underline;
+    text-underline-offset: 20px;
+}
+
+#thd-hr {
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    margin-top: -15px;
+}
+#mini-nav {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+#mini-list {
+    text-decoration: none !important;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #f0f0f0;
+
+    background-color: rgba(132, 136, 109, 70%);
+    border-radius: 30px;
+}
+#mini-list:hover {
+    font-weight: bolder;
+    background-color: rgba(187, 185, 172, 70%);
+}
+
+#thd-h3-1, #thd-h3-3 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: -20px;
+
+    color: #5a625a;
+    text-decoration: #bbb9ac 5px underline;
+    text-underline-offset: 10px;
+}
+#thd-h3-2 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    
+    text-align: right;
+    margin-right: 60px;
+    margin-bottom: -20px;
+
+    color: #5a625a;
+    text-decoration: #bbb9ac 5px underline;
+    text-underline-offset: 10px;
+}
+
+#card-all {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.card-title {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.card-text {
+    font-family: 'RIDIBatang', sans-serif;
+    font-size: 17px;
+}
+#card-btn {
+    background-color: #5a624a;
+    border: 0;
+}
+#card-btn:hover {
+    background-color: #84886d;
+}
+
+hr[role="tournament1"] {
+    border: 0px solid;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #5a625a, rgba(0, 0, 0, 0));
+    margin: 32px 0px;
+    display: block;
+}
+hr[role="tournament1"]::before {
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid;
+    border-color: #5a625a;
+    border-left: 0px solid;
+    border-top: 0px solid;
+    padding: 10px;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -10px 0px 0px -22px;
+    content: "";
+}
+/* third.html 조작 끝 */
+
+
+/* forth.html 조작 시작 */
+#book-icon {
+    display: flex;
+    justify-content: center;
+    
+    filter: opacity(0.5) drop-shadow(0 0 0 #84886d);
+}
+#for-h1 {
+    font-family: 'PuradakGentleGothicR', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: -20px;
+    
+    text-align: center;
+    color: #84886d;
+}
+#for-pre {
+    font-weight: bold;
+    font-size: 18px;
+
+    text-align: center;
+    color: #bbb9ac;
+}
+/* forth.html 조작 끝 */
+
+
+/* fifth.html 조작 시작 */
+#fif-form {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 120px;
+}
+#fif-btn {
+    background-color: #5a624a;
+    font-weight: bold;
+    font-size: 17px;
+    color: #f0f0f0;
+}
+#fif-btn:hover {
+    background-color: #84886d;
+}
+/* fifth.html 조작 끝 */
+
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    background-color: rgb(240, 240, 240);
+}

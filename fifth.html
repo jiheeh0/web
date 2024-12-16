@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head lan="ko">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale-1">
+
+        <title>감각: 가입하기</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="index-style.css">
+
+        <script>
+            // 부트스트랩의 유효성 검사 활성화 스크립트
+            (function () {
+                'use strict';
+        
+                // DOM 로드 후 실행
+                window.addEventListener('load', function () {
+                    // 모든 'needs-validation' 클래스를 가진 폼 선택
+                    const forms = document.querySelectorAll('.needs-validation');
+        
+                    // 유효성 검사 활성화
+                    Array.prototype.slice.call(forms).forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault(); // 기본 제출 동작 방지
+                                event.stopPropagation(); // 이벤트 전파 방지
+                            }
+                            form.classList.add('was-validated'); // 유효성 검사 스타일 적용
+                        }, false);
+                    });
+                });
+            })();
+        </script>      
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- 내비게이션 바 시작 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline" id="sub-nav">
+            <div class="container-fluid row">
+                <div class="col-9">
+                    <a class="navbar-brand" id="sub-title" href="index.html">감각</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" id="sub-list" aria-current="page" href="first.html">독후감</a>
+                        <a class="nav-link" id="sub-list" href="second.html">토의감</a>
+                        <a class="nav-link" id="sub-list" href="third.html">추천감</a>
+                        <a class="nav-link" id="sub-list" href="forth.html">소개감</a>
+                        <a class="nav-link active" id="sub-list" href="#">가입</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 내비게이션 바 끝 -->
+
+        <!-- 폼 영역 시작 -->
+        <form class="needs-validation" id="fif-form" novalidate>
+            <div>
+                <label for="validationCustom01" class="form-label">닉네임</label>
+                <input type="text" class="form-control" value="유저2502" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    좋습니다!
+            </div>
+
+            <br>
+            <div>
+                <label for="validationCustom02" class="form-label">아이디</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                  좋습니다!
+                </div>
+                <div class="invalid-feedback">
+                  아이디를 입력해 주세요.
+                </div>
+              </div>
+
+            <br><br>
+            <div class="col justify-content-md-end">
+                <a class="btn btn-primary justify-content-center"
+                href="#" id="write" type="button" onclick="alert('사용 가능한 아이디입니다.');"
+                style="cursor:pointer">중복 확인</a>
+                <pre>
+    유저 닉네임는 언제든 수정할 수 있으며, 타인에게 항시 공개됩니다. 타인에게 불쾌감을 줄 수 있는 표현 또는 특정 성별, 집단, 단체, 기관 등을
+    비하하는 단어의 포함을 일절 금합니다. 아이디는 최초 가입 시에만 작성 가능하며, 중복 사용이 불가능합니다.
+                </pre>
+            </div>
+            <br>
+
+            <div class="col">
+              <label for="validationCustomUsername" class="form-label">이메일</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">...</option>
+                    <option>google.com</option>
+                    <option>gmail.com</option>
+                    <option>kakao.com</option>
+                    <option>naver.com</option>
+                </select>
+                <div class="invalid-feedback">
+                  이메일을 입력해 주세요.
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <div>
+              <label for="validationCustom05" class="form-label">비밀번호</label>
+              <input type="password" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                비밀번호를 입력해 주세요.
+              </div>
+            </div>
+
+            <br>
+            <div>
+              <label for="validationCustom05" class="form-label">비밀번호 확인</label>
+              <input type="password" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                비밀번호를 다시 입력해 주세요.
+              </div>
+            </div>
+
+            <br>
+            <div class="col-md-5">
+                <label for="validationCustom04" class="form-label">유입 경로</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">...</option>
+                  <option>인터넷 검색을 통해 우연히</option>
+                  <option>가족/친구/지인의 추천으로</option>
+                  <option>X(구 Twitter) 광고를 통해</option>
+                  <option>Instagram 광고를 통해</option>
+                  <option>네이버 카페 등으로부터 유입</option>
+                </select>
+              </div>
+
+            <br><br>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  입력 내용 및 주의 문구를 모두 확인하였습니다.
+                </label>
+                <div class="invalid-feedback">
+                  동의 후 가입 가능합니다.
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn" type="submit" id="fif-btn">가입하기</button>
+            </div>
+        </form>
+        <!-- 폼 영역 끝 -->
+
+        <br><br><br><br><br><br>
+        <!-- 풋터 시작 -->
+        <footer id="foot">
+            <div class="container text-center">
+                <pre>
+                <strong>감각</strong>은 책을 사랑하는 사람이라면 누구나 이용 가능합니다.
+                원활한 사이트 운영을 위해 타인을 향한 비방을 금하며, 발각될 경우 법적 조치가 취해질 수 있음을 알립니다.
+                
+                <strong>E-mail: abcdefg@google.com  Call: 010-0000-0000
+                Copyright 2024 Designed by Han Ji Hee</strong></pre>
+            </div>
+        </footer>
+        <!-- 풋터 끝 -->
+    </body>
+</html>

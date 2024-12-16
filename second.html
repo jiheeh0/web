@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head lan="ko">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale-1">
+
+        <title>감각: 토의감</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="index-style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            const currentPath = window.location.pathname; // 현재 경로 가져오기
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add('active'); // 현재 페이지와 일치하는 링크에 active 추가
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // 첫 번째 소설책 이미지 페이드인
+            $(document).ready(function() {
+                $("#sec-book").hide().fadeIn(1000);
+            })
+
+            // 토의 투표 이미지 변경 페이드아웃/인
+            $(document).ready(function() {
+                $("#towe-a-1").click(function() {
+                    $("#sec-pic").fadeOut(500, function() {
+                        $("#sec-pic").attr("src", "sec-pic-1.png");
+                        $("#sec-pic").fadeIn(700);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#towe-a-2").click(function() {
+                    $("#sec-pic").fadeOut(500, function() {
+                        $("#sec-pic").attr("src", "sec-pic-2.png");
+                        $("#sec-pic").fadeIn(700);
+                    });
+                });
+            });
+          </script>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- 내비게이션 바 시작 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline" id="sub-nav">
+            <div class="container-fluid row">
+                <div class="col-9">
+                    <a class="navbar-brand" id="sub-title" href="index.html">감각</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" id="sub-list" aria-current="page" href="first.html">독후감</a>
+                        <a class="nav-link active" id="sub-list" href="second.html">토의감</a>
+                        <a class="nav-link" id="sub-list" href="third.html">추천감</a>
+                        <a class="nav-link" id="sub-list" href="forth.html">소개감</a>
+                        <a class="nav-link" id="sub-list" href="fifth.html">가입</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 내비게이션 바 끝 -->
+
+
+        <!-- 책 소개 단락 시작 -->
+        <br><br><br><br>
+        <div class="row" id="sec">
+            <div class="col">
+                <img src="sec-book.jpg" id="sec-book" style="position: absolute;">
+            </div>
+
+            <div class="col" id="sec-sec-col">
+                <h1 id="sec-h1">이달의 토의 주제</h1>
+                <h4 id="sec-h4">⌈도리언 그레이의 초상⌋ — 오스카 와일드 저</h4>
+
+<pre id="sec-pre">
+<strong>
+ <i id="sec-ridi">"그렇게 비참한 표정 짓지 마! 젊음을 유지하는 비결은
+젊음과 어울리지 않는 감정 따위는 결코 갖지 않는 거야."</i></strong>
+
+ 아일랜드 출신의 작가인 오스카 와일드의 소설, '도리언 그레이의 
+초상(The Picture of Dorian Gray)'은 빼어난 외모를 가진 주인공
+'도리언 그레이'에 대한 이야기다. 외모가 아름다운 만큼 늙어가는
+것을 두려워한 도리언은 초상화 속 시들지 않는 자신을 보며 소원을
+빌게 된다. <i>"나는 늙어 무섭고 흉측한 모습으로 변하겠지. 그런데
+이 그림은 항상 젊은 상태로 남을 것이 아닌가. (...) 나는 영원히
+젊은 상태로 있고, 그림이 늙어 간다면! 그걸 위해서라면 -그럴 수만
+있다면- 무엇이든 다 줄 텐데! 내 영혼이라도 내줄 용의가 있는데!"</i>
+
+ 그리고, 도리언의 소원은 놀랍게도 현실이 된다. 도리언은 젊음과
+아름다움을 영원히 간직하는 대신, 그의 초상화와 영혼이 늙고 추해져
+가기 시작한 것이다. ...
+<p id="sec-right">인용 출처 — 오스카 와일드, ⟪도리언 그레이의 초상⟫, 이준기 저저</p>
+                </pre>
+            </div>
+        </div><br>
+        <!-- 책 소개 단락 끝 -->
+        
+
+        <!-- 토의 주제 단락 시작 -->
+        <br>
+        <div id="towe">
+            <br><br>
+            <div class="row">
+                <div class="col-8">
+                    <h2 id="sec-h2">"영원한 젊음을 위해 <i id="sec-i">영혼</i>을 팔 수 있을까?"</h2>
+                    <pre id="towe-pre">
+                        <strong id="sec-strong"> 그는 정말 어리석은 사람이었을 뿐인가</strong>
+                         작중의 도리언은 자신의 젊음과 아름다움을 위해 기꺼이 영혼과 육체를 팔았다. 이것은 비단 '도리언'
+                        이라는 인물의 판단력, 도덕성의 결여와 관련하여 생각해 볼 수 없다. 인간이라면 누구나 추구할 수 있는
+                        '욕망', 도리언이 보인 행보 또한 그러한 것에서 기인한 것이기 때문이다. 심지어 그 욕망이 일순위로
+                        생각할 만큼 가치 있는 욕망이었다면 어떤가. 어리석은 생각이라며 거절할 것이라고 그 누가 당당하게
+                        이야기할 수 있는가. 있다 한들 쉬운 일은 아닐 것이다.
+
+                        <strong id="sec-strong"> 누구나 한 번쯤 상상해 본 적 있는 것</strong>
+                         '만약 악마-또는 초월적인 존재-가 나타나 영원히 젊음을 유지할 수 있게 하는 대신, 영혼을 가져간다고
+                        한다면 어떨까?' ... 이번 달은 ⌈도리언 그레이의 초상⌋과 함께 차마 입밖으로 내지 못했던 달콤한 유혹에
+                        대해 토의해 보려 한다. 정말 그런 일이 일어난다면, <i>당신은 기꺼이, 젊음과 영혼을 맞바꿀 수 있는가?</i> 
+                    </pre>
+
+                    <br><br><br>
+                    <div id="towe-btn">
+                        <button type="button" class="btn btn-dark btn-lg"><a href="#yn" id="towe-a-1"
+                            onclick="alert('의견을 더해 주셔서 감사합니다! 현재 찬성 수: 508명');">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            팔 수 있다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+                            &nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-dark btn-lg"><a href="#yn" id="towe-a-2"
+                            onclick="alert('의견을 더해 주셔서 감사합니다! 현재 반대 수: 1398명');">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            팔 수 없다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+                    </div> 
+                </div>
+                <div class="col">
+                    <br><br><br><br><br>
+                    <img src="vintage-op.png" id="sec-pic" style="position: absolute;">
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+        <!-- 토의 주제 단락 끝 -->
+
+
+        <!-- 찬반 단락 시작 -->
+        <br>
+        <div class="row">
+            <div class="col" id="yn">
+                <h1 id="yes-h1">팔 수 있다.</h1>
+                <pre id="ridi-yes"><i>영혼을 바치는 대신 영원한 젊음을 택한다.</i></pre>
+                <br>
+
+                <div id="yes-id">
+                    &nbsp;<img src="http://placehold.it/25x25">&nbsp;패션공대생
+                </div>
+                <h5 id="yes-h5">가성비 갑 성형수술</h5>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️403</button>
+                <br><br>
+
+                <div id="yes-id">
+                    &nbsp;<img src="http://placehold.it/25x25">&nbsp;너T야
+                </div>
+                <h5 id="yes-h5">솔직히 아름다움을 갈망하는 욕구야말로 인간의 가장 큰 욕구라고 생각합니다.</h5>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️336</button>
+                <br><br>
+
+                <div id="yes-id">
+                    &nbsp;<img src="http://placehold.it/25x25">&nbsp;유저768
+                </div>
+                <h5 id="yes-h5">저를 좋아하는 팬분들을 생각해서라면 영혼도 팔 수 있을 것 같아요!</h5>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️108</button>
+                <br><br>
+
+                <div id="yes-id">
+                    &nbsp;<img src="http://placehold.it/25x25">&nbsp;서러운막내
+                </div>
+                <h5 id="yes-h5">이 얼굴을 평생 보존한다고? 바로 계약함</h5>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️87</button>
+                <br><br><br><br><br><br>
+
+                <div class="row">
+                    <form class="row form-inline w-75" id="comment">
+                        <div class="col-8" id="yes-cmt">
+                            <label for="inputPassword2" class="visually-hidden mb-3" id="cmt-input">의견 남기기</label>
+                            <input class="form-control focus-ring focus-ring-light" placeholder="의견 남기기">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary position-relative" onclick="alert('[의견 작성]은 로그인 후 이용 가능합니다.');"
+                                style="cursor:pointer" id="yes-btn">전송
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    305+
+                                    <span class="visually-hidden">new comment</span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            
+            <div class="v-line">
+            </div>
+
+            <div class="col" id="no">
+                <h1 id="no-h1">팔 수 없다.</h1>
+                <pre id="ridi-no"><i>응하지 않고 안전하게 영혼을 지켜낸다.</i></pre>
+                <br>
+
+                <div id="no-id">
+                    도둑놈심보&nbsp;<img src="http://placehold.it/25x25">&nbsp;
+                </div>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️999</button>
+                <h5 id="no-h5">일단 살고 봐야지</h5>
+                <br><br>
+
+                <div id="no-id">
+                    어쩌라고저쩌라고&nbsp;<img src="http://placehold.it/25x25">&nbsp;
+                </div>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️982</button>
+                <h5 id="no-h5">이런 토의가 성립한다는 사실 자체가 외모지상주의의 페해 같다. 겉모습의 아름다움에 현혹되지 말아야 한다는 게
+                    아무리 말처럼 쉽지 않다고 해도 그렇지... 실존과 추상 중 무엇이 더 우선인지 신중히 좀 생각해 보길</h5>
+                <br><br>
+
+                <div id="no-id">
+                    유저1433&nbsp;<img src="http://placehold.it/25x25">&nbsp;
+                </div>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️890</button>
+                <h5 id="no-h5">껍데기를 위해 알맹이를 버린다니.</h5>
+                <br><br>
+
+                <div id="no-id">
+                    옳닥&nbsp;<img src="http://placehold.it/25x25">&nbsp;
+                </div>
+                <button id="heart" onclick="alert('[공감하기]는 로그인 후 이용 가능합니다.');" style="cursor:pointer">
+                    ❤️877</button>
+                <h5 id="no-h5">영혼 없는 아름다움에 무슨 의미가 있을지 모르겠음 다 떠나서 그걸 '나'라고 할 수 있을지부터 의문임</h5>
+                <br><br>
+
+                <br><br>
+
+                <div class="row">
+                    <form class="row form-inline w-75" id="comment">
+                        <div class="col-8" id="no-cmt">
+                            <label for="inputPassword2" class="visually-hidden mb-3" id="cmt-input">의견 남기기</label>
+                            <input class="form-control focus-ring focus-ring-light" placeholder="의견 남기기">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary position-relative" onclick="alert('[의견 작성]은 로그인 후 이용 가능합니다.');"
+                                style="cursor:pointer" id="cmt-button-no">전송
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    999+
+                                    <span class="visually-hidden">new comment</span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <br><br><br><br><br>
+        <!-- 찬반 단락 끝 -->
+
+
+        <br><br><br>
+        <!-- 풋터 시작 -->
+        <footer id="foot">
+            <div class="container text-center">
+                <pre>
+                <strong>감각</strong>은 책을 사랑하는 사람이라면 누구나 이용 가능합니다.
+                원활한 사이트 운영을 위해 타인을 향한 비방을 금하며, 발각될 경우 법적 조치가 취해질 수 있음을 알립니다.
+                
+                <strong>E-mail: abcdefg@google.com  Call: 010-0000-0000
+                Copyright 2024 Designed by Han Ji Hee</strong></pre>
+            </div>
+        </footer>
+        <!-- 풋터 끝 -->
+    </body>
+</html>
